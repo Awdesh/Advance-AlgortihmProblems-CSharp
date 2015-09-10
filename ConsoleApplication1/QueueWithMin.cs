@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace ConsoleApplication1
 {
     /// <summary>
-    /// 
+    /// FIFO
+    /// Class responsible for creating Enqueue, Dequeue and min operation.
     /// </summary>
     class QueueWithMin
     {
@@ -15,7 +16,7 @@ namespace ConsoleApplication1
         Queue<int> minQueue = new Queue<int>();
 
         /// <summary>
-        /// 
+        /// Enqueue method that adds an item in the queue.
         /// </summary>
         /// <param name="n"></param>
         public void Enqueue(int n)
@@ -28,7 +29,7 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// 
+        /// Dequeue method that removes an item in the queue.
         /// </summary>
         /// <returns></returns>
         public int Dequeue()
@@ -42,7 +43,7 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// 
+        /// Method returns min. element from the queue.
         /// </summary>
         /// <returns></returns>
         public int Min()
