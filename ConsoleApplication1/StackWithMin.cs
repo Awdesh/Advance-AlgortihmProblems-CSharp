@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApplication1
 {
     /// <summary>
-    /// 
+    /// Class responsible for creating a stack with optimized min operation.
     /// </summary>
     class StackWithMin
     {
@@ -15,9 +15,9 @@ namespace ConsoleApplication1
         Stack<int> minStack = new Stack<int>();
 
         /// <summary>
-        /// 
+        /// Method pushes integer into stack.
         /// </summary>
-        /// <param name="n"></param>
+        /// <param name="n">integer</param>
         public void Push(int n)
         {
             elements.Push(n);
@@ -28,9 +28,9 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// 
+        /// Method pops integer from stack.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>integer</returns>
         public int Pop()
         {
             if(minStack.Count == 0)
@@ -48,7 +48,7 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// 
+        /// Method returns minimum integer from stack.
         /// </summary>
         /// <returns></returns>
         public int Min()
