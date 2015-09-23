@@ -26,6 +26,7 @@ namespace ConsoleApplication1
 
                 if(arr[mid] % 2 == 0)
                 {
+                    // tells that last time arr[mid]%2  was != 0 and isOdd flag has been set.
                     if(isOdd)
                     {
                         return ++mid;
@@ -36,6 +37,7 @@ namespace ConsoleApplication1
 
                 else
                 {
+                    // tells that last time arr[mid]%2 was == 0 and isEven flag has been set.
                     if (isEven)
                     {
                         return --mid;
