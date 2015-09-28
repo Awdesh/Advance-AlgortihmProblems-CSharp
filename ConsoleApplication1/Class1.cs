@@ -78,14 +78,15 @@ namespace ConsoleApplication1
                 {
                     return mid;
                 }
-
-                else if(arr[mid] > num && arr[start] > num)
+                
+                // number exists on right side of mid.
+                if(arr[mid] > num && arr[start] > num)
                 {
                     start = mid++;
                 }
-                else
+                else if (arr[mid] < num && arr[start] > num)
                 {
-                    end = mid--;
+                    start = mid++;
                 }
             }
         }
