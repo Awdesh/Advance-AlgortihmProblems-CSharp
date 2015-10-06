@@ -10,6 +10,9 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
+            Solution s = new Solution();
+            int len = s.LengthOfLongestSubstring("thebrownfxjumpover");
+            Console.WriteLine(len);
         }
     }
 }
