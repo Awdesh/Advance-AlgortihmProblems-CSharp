@@ -30,7 +30,7 @@ namespace ConsoleApplication1
             int high = nums.Length - 1;
 
             // TC-2 , index returned is greater than zero i.e. array does have rotation.
-            if(index >= 0)
+            if(index > 0)
             {
                 if (nums[index] == target)
                 {
